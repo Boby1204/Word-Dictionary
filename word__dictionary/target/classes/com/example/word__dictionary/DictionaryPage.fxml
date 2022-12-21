@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.word__dictionary.DictionaryPageController">
+   <children>
+      <Text layoutX="57.0" layoutY="164.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Search a Word in Dictionary" wrappingWidth="167.4700927734375" />
+      <Text layoutX="57.0" layoutY="238.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Add a New Wod" />
+      <Text layoutX="57.0" layoutY="374.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Find Meaning of a Word" />
+
+      <TextField fx:id="search" layoutX="57.0" layoutY="179.0" prefHeight="25.0" prefWidth="203.0" promptText="Enter any word to search" />
+      <TextField fx:id="newword" layoutX="57.0" layoutY="250.0" prefHeight="25.0" prefWidth="203.0" promptText="Enter any New Word" />
+      <TextField fx:id="meaning" layoutX="57.0" layoutY="296.0" prefHeight="25.0" prefWidth="203.0" promptText="Enter it's Meaning" />
+      <TextField fx:id="findWord" layoutX="57.0" layoutY="385.0" prefHeight="25.0" prefWidth="203.0" promptText="Enter any Word to find it's meaning" />
+
+      <Button layoutX="302.0" layoutY="179.0" onMouseClicked="#SearchButton" text="Search" />
+      <Button layoutX="293.0" layoutY="270.0" onMouseClicked="#add" prefHeight="25.0" prefWidth="89.0" text=" Add a Word" />
+      <Button layoutX="294.0" layoutY="385.0" onMouseClicked="#meaning" text="Find Meaning" />
+      <ImageView fitHeight="120.0" fitWidth="161.0" layoutX="-1.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@logo2.jpeg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="120.0" fitWidth="154.0" layoutX="380.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@logo2.jpeg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="120.0" fitWidth="253.0" layoutX="143.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@logo1.jpeg" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
